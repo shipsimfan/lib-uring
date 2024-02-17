@@ -1,0 +1,9 @@
+[package]
+name = "uring"
+version = "0.1.0"
+description = "Raw bindings for liburing"
+authors = ["Lance Hart <me@lancehart>"]
+edition = "2021"
+repository = "https://github.com/shipsimfan/lib-uring.git"
+license = "GPL-3.0-or-later"
+publish = false
