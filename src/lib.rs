@@ -11,6 +11,6 @@ mod functions;
 mod structures;
 mod types;
 
-pub use functions::io_uring_queue_init;
+pub use functions::{io_uring_queue_exit, io_uring_queue_init};
 pub use structures::{io_uring, io_uring_cq, io_uring_sq};
 pub use types::{io_uring_cqe, io_uring_sqe};
