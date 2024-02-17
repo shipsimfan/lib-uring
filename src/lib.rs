@@ -5,3 +5,12 @@
 #![deny(rustdoc::unescaped_backticks)]
 #![deny(rustdoc::redundant_explicit_links)]
 #![warn(rustdoc::broken_intra_doc_links)]
+#![feature(c_size_t)]
+
+mod functions;
+mod structures;
+mod types;
+
+pub use functions::io_uring_queue_init;
+pub use structures::{io_uring, io_uring_cq, io_uring_sq};
+pub use types::{io_uring_cqe, io_uring_sqe};
