@@ -13,7 +13,7 @@ mod types;
 
 pub use functions::{
     io_uring_cq_ready, io_uring_get_sqe, io_uring_prep_read, io_uring_queue_exit,
-    io_uring_queue_init, io_uring_submit, io_uring_wait_cqe,
+    io_uring_queue_init, io_uring_sqe_set_data, io_uring_submit, io_uring_wait_cqe,
 };
 pub use structures::{io_uring, io_uring_cq, io_uring_sq};
 pub use types::{io_uring_cqe, io_uring_sqe};
