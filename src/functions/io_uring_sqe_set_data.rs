@@ -14,8 +14,8 @@ extern "C" {
     /// queue entry `sqe`.
     ///
     /// After the caller has requested a submission queue entry (SQE) with [`io_uring_get_sqe`],
-    /// they can associate a data pointer or value with the SQE. Once the completion arrives, the
-    /// function [`io_uring_cqe_get_data`] or [`io_uring_cqe_get_data64`] can be called to retrieve
-    /// the data pointer associated with the submitted request.
+    /// [`io_uring_sqe_set_data`] can associate a data pointer the SQE. Once the completion
+    /// arrives, the function [`io_uring_cqe_get_data`] can be called to retrieve the data pointer
+    /// associated with the submitted request.
     pub fn io_uring_sqe_set_data(sqe: *mut io_uring_sqe, user_data: *mut c_void);
 }
