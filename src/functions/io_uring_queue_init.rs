@@ -1,6 +1,10 @@
 use crate::io_uring;
 use std::ffi::{c_int, c_uint};
 
+// rustdoc imports
+#[allow(unused_imports)]
+use crate::io_uring_queue_exit;
+
 #[link(name = "uring")]
 extern "C" {
     /// Setup [`io_uring`] submission and completion queues
