@@ -2,7 +2,7 @@ use crate::io_uring;
 use std::ffi::{c_int, c_uint};
 
 #[link(name = "uring")]
-extern "system" {
+extern "C" {
     /// Setup [`io_uring`] submission and completion queues
     ///
     /// # Description

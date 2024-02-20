@@ -5,7 +5,7 @@ use crate::io_uring;
 use crate::io_uring_queue_init;
 
 #[link(name = "uring")]
-extern "system" {
+extern "C" {
     /// Tear down [`io_uring`] submission and completion queues
     ///
     /// # Description
