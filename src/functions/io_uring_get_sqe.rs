@@ -2,6 +2,8 @@ use crate::{io_uring, io_uring_sqe};
 
 // rustdoc imports
 #[allow(unused_imports)]
+use crate::io_uring_submit;
+#[allow(unused_imports)]
 use std::ptr::null_mut;
 
 #[link(name = "uring")]
@@ -27,6 +29,6 @@ extern "C" {
     /// # Return Value
     /// [`io_uring_get_sqe`] returns a pointer to the next submission queue event on success and
     /// [`null_mut`] on failure. If [`null_mut`] is returned, the SQ ring is currently full and
-    /// entries  must be submitted for processing before new ones can get allocated.
+    /// entries must be submitted for processing before new ones can get allocated.
     pub fn io_uring_get_sqe(ring: *mut io_uring) -> *mut io_uring_sqe;
 }
