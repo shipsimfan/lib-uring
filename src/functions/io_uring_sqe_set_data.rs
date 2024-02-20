@@ -3,7 +3,7 @@ use std::ffi::c_void;
 
 // rustdoc imports
 #[allow(unused_imports)]
-use crate::io_uring_get_sqe;
+use crate::{io_uring_cqe_get_data, io_uring_get_sqe};
 
 #[link(name = "uring")]
 extern "C" {

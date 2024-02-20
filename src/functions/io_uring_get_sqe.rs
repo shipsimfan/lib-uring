@@ -2,7 +2,10 @@ use crate::{io_uring, io_uring_sqe};
 
 // rustdoc imports
 #[allow(unused_imports)]
-use crate::{io_uring_prep_read, io_uring_sqe_set_data, io_uring_sqe_set_data64, io_uring_submit};
+use crate::{
+    io_uring_cqe_get_data, io_uring_prep_read, io_uring_sqe_set_data, io_uring_sqe_set_data64,
+    io_uring_submit,
+};
 #[allow(unused_imports)]
 use std::ptr::null_mut;
 
