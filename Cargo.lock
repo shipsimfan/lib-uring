@@ -3,5 +3,13 @@
 version = 3
 
 [[package]]
+name = "linux"
+version = "0.1.0"
+source = "git+https://github.com/shipsimfan/lib-linux#4f6faf903092c73d0764acde299978579ed947b8"
+
+[[package]]
 name = "uring"
 version = "0.1.0"
+dependencies = [
+ "linux",
+]
