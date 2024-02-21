@@ -10,7 +10,6 @@
 mod enumerations;
 mod functions;
 mod structures;
-mod types;
 
 pub use enumerations::io_uring_op;
 pub use functions::{
@@ -19,8 +18,7 @@ pub use functions::{
     io_uring_sqe_set_data, io_uring_sqe_set_data64, io_uring_submit, io_uring_wait_cqe,
 };
 pub use structures::{
-    io_uring, io_uring_cq, io_uring_sq, io_uring_sqe, io_uring_sqe_u1, io_uring_sqe_u1_s,
-    io_uring_sqe_u2, io_uring_sqe_u3, io_uring_sqe_u4, io_uring_sqe_u5, io_uring_sqe_u5_s,
-    io_uring_sqe_u6, io_uring_sqe_u6_s,
+    io_uring, io_uring_cq, io_uring_cqe, io_uring_sq, io_uring_sqe, io_uring_sqe_u1,
+    io_uring_sqe_u1_s, io_uring_sqe_u2, io_uring_sqe_u3, io_uring_sqe_u4, io_uring_sqe_u5,
+    io_uring_sqe_u5_s, io_uring_sqe_u6, io_uring_sqe_u6_s,
 };
-pub use types::io_uring_cqe;
