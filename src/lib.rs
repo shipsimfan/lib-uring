@@ -17,8 +17,9 @@ pub use enumerations::io_uring_op;
 pub use functions::{
     io_uring_cq_advance, io_uring_cq_ready, io_uring_cqe_get_data, io_uring_cqe_get_data64,
     io_uring_cqe_seen, io_uring_get_sqe, io_uring_prep_read, io_uring_prep_rw,
-    io_uring_prep_timeout, io_uring_queue_exit, io_uring_queue_init, io_uring_sqe_set_data,
-    io_uring_sqe_set_data64, io_uring_submit, io_uring_wait_cqe, io_uring_wait_cqe_nr,
+    io_uring_prep_timeout, io_uring_prep_timeout_remove, io_uring_queue_exit, io_uring_queue_init,
+    io_uring_sqe_set_data, io_uring_sqe_set_data64, io_uring_submit, io_uring_wait_cqe,
+    io_uring_wait_cqe_nr,
 };
 pub use structures::{
     io_uring, io_uring_cq, io_uring_cqe, io_uring_sq, io_uring_sqe, io_uring_sqe_u1,
