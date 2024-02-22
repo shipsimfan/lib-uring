@@ -2,6 +2,13 @@ use crate::{io_uring_op, io_uring_prep_rw, io_uring_sqe};
 use linux::time::__kernel_timespec;
 use std::ffi::c_uint;
 
+// rustdoc imports
+#[allow(unused_imports)]
+use crate::{
+    IORING_TIMEOUT_ABS, IORING_TIMEOUT_BOOTTIME, IORING_TIMEOUT_ETIME_SUCCESS,
+    IORING_TIMEOUT_MULTISHOT, IORING_TIMEOUT_REALTIME,
+};
+
 /// Prepare a timeout request
 ///
 /// # Description
